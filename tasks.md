@@ -1,7 +1,7 @@
 
 Тест расчитан на  понимания основого принципа работы таких фреймворком как Selenium,MyIbatis,Spring AOP. Время выполнения ~30 минут.
 
-Задание 1:
+**Задание 1**:
 Используя Java Dynamic Proxy (https://docs.oracle.com/javase/8/docs/technotes/guides/reflection/proxy.html)
 реализуйте метод
  ``` java
@@ -42,3 +42,30 @@ public class MethodInterception {
 }
 ```
 
+**Задание №2 - TestNG,ServiceLoader**:
+Реализуйте перехват параметров анотации TestMethodInfo  в тестовом методе и вывод их в консоль. Подключение TestNg Listener нужно сделать через ServiceLoader. 
+ ``` java
+
+public enum Priority {
+    Blocker, Critical, Major, Minor
+}
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE) //on class level
+public @interface TestMethodInfo {
+
+//Приоритет теста
+Priority priority() default Priority.Major;
+
+//Автор теста	
+String author() default "Bill Gates";
+
+//Дата последних изменений в тесте
+String lastModified() default "01.01.2019";
+}
+
+@Test
+@TestMethodInfo(priority = Priority.Critical, author = "Test user", lastModified = "20.08.2019")
+public void annotation() {
+    assertEquals(1, 1);
+}
