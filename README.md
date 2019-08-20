@@ -47,7 +47,7 @@ public class MethodInterception {
 Тест на понимание механизма работы Listener TestNG 
 
 **Задание №2 - TestNG,ServiceLoader**:
-Реализуйте перехват параметров анотации TestMethodInfo  в тестовом методе и вывод их в консоль. Подключение TestNg Listener нужно сделать через ServiceLoader. 
+Реализуйте перехват параметров анотации TestMethodInfo  в тестовом методе и вывод их в консоль. Подключение TestNg Listener нужно сделать через ServiceLoader.  Время выполнения ~1 час.
  ``` java
 
 public enum Priority {
