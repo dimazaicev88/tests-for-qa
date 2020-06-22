@@ -1,7 +1,7 @@
 # Тестовые задание для инженеров автоматизированного тестирования
 
 
-Тест расчитан на  понимания основого принципа работы таких фреймворком как Selenium,MyIbatis,Spring AOP. Время на выполнения задания ~30 минут.
+Тест расчитан на  понимания основого принципа работы таких фреймворком как Selenium,MyIbatis,Spring AOP.
 
 **Задание 1**:
 Используя Java Dynamic Proxy (https://docs.oracle.com/javase/8/docs/technotes/guides/reflection/proxy.html)
@@ -47,7 +47,7 @@ public class MethodInterception {
 Тест на понимание механизма работы Listener TestNG 
 
 **Задание №2 - TestNG,ServiceLoader**:
-Реализуйте перехват параметров анотации TestMethodInfo  в тестовом методе и вывод их в консоль. Подключение TestNg Listener нужно сделать через ServiceLoader.  Время на выполнения задания ~1 час.
+Реализуйте перехват параметров анотации TestMethodInfo  в тестовом методе и вывод их в консоль. Подключение TestNg Listener нужно сделать через ServiceLoader. 
  ``` java
 
 public enum Priority {
