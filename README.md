@@ -7,7 +7,7 @@
 Используя Java Dynamic Proxy (https://docs.oracle.com/javase/8/docs/technotes/guides/reflection/proxy.html)
 реализуйте метод
  ``` java
- MainPage createPage(Class clazz),
+ MainPage createPage(Class clazz)
  ```
 класса MethodInterception, таким образом что бы проходил тест:
 ``` java
