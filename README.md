@@ -7,7 +7,7 @@
  ``` java
  MainPage createPage(Class clazz)
  ```
-класса MethodInterception, таким образом что бы проходил тест:
+таким образом что бы проходил тест:
 ``` java
 
 @Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
